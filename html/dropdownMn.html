@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/dropdown.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <title>Header DropDown</title>
+</head>
+<body>
+  <header>
+    <div class="menu-toggle" id="hamburger">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="overlay"></div>
+    <div class="container">
+        <nav>
+            <h1 class="brand"><a href="index.html"> <span> Avick. <span> </a></h1>
+           <div class = "search">  <i class="fa fa-solid fa-magnifying-glass"></i>
+              </div>
+              <ul>
+                <li><a href="#">Driver</a></li>
+                <li><a href="#">Rider</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">For You</a></li>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="">Get Avick</a><li>
+            </ul>
+            <div class="proudly-9ja">
+              <img src="/imgs/home-pg/proudly nigeria.svg" alt="">
+            </div>
+        </nav>
+    </div>
+</header>
+<script>
+  var open = document.getElementById('hamburger');
+var changeIcon = true;
+
+open.addEventListener("click", function(){
+
+    var overlay = document.querySelector('.overlay');
+    var nav = document.querySelector('nav');
+    var icon = document.querySelector('.menu-toggle i');
+
+    overlay.classList.toggle("menu-open");
+    nav.classList.toggle("menu-open");
+
+    if (changeIcon) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-times");
+
+        changeIcon = false;
+    }
+    else {
+        icon.classList.remove("fa-times");
+        icon.classList.add("fa-bars");
+        changeIcon = true;
+    }
+});
+</script>
+
+
+</body>
+</html>
