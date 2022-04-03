@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/contact-us.css">
+  <link rel="stylesheet" href="../css/dropdown.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo&family=Dongle:wght@300;400;700&family=Merriweather&family=Mulish:wght@300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Drivers Registration</title>
+</head>
+<style>
+  
+  .contact {
+     padding: 2rem 1rem;
+     width: 90%;
+     background-image: url(images/whitebg.jpg);
+     background-size: cover;
+ }
+
+ .contact-content {
+     height: auto;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     border-radius: 10px;
+     box-shadow: 0 0 3rem rgba(0, 0, 0, 0.9);
+ }
+
+ .left {
+     background-color: #360297;
+     width: 100%;
+     border-top-left-radius: 10px;
+     border-bottom-left-radius: 10px;
+ }
+
+ .right {
+     background-color: #ffffff;
+     width: 100%;
+     border-top-right-radius: 10px;
+     border-bottom-right-radius: 10px;
+     position: relative;
+     z-index: -1;
+ }
+
+ .right-image {
+     height: 2rem;
+     width: 2rem;
+     position: absolute;
+     top: -4rem;
+     left: -5rem;
+ }
+
+ .contact-form {
+     padding: 3rem;
+     width: 100%;
+ }
+
+ .form {
+     width: 90%;
+     text-align: center;
+     padding: 2rem 0;
+
+ }
+
+ .form-group {
+     position: relative;
+     padding: 2rem;
+     width: 90%;
+ }
+
+ .contact-heading {
+     font-size: 4rem;
+     color: #391dda;
+ }
+
+ .contact-btn:link,
+ .contact-btn:visited {
+     text-decoration: none;
+     display: inline-block;
+     border: 1px solid #000981;
+     background-color: transparent;
+     color: #5e26f7;
+     outline: none;
+     font-size: 2rem;
+     border-radius: 10px;
+     margin-top: 1rem;
+     padding: 1rem 2rem;
+     box-shadow: 0 0 1rem rgba(0, 0, 0, .4);
+     transition: all .4s ease;
+ }
+
+ .contact-btn:hover {
+     background-color: #5341f5;
+     box-shadow: 0.3rem 1rem rgba(0, 0, 0, .6);
+     color: white;
+ }
+
+ .input {
+     width: 90%;
+     outline: none;
+     border: 1px solid #6237ff;
+     background-color: #fff;
+     height: 3rem;
+     font-size: 1rem;
+     border-radius: 2rem;
+     text-indent: 5px;
+     box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+     padding: 1rem;
+     transition: all .4s ease;
+ }
+
+ .input:focus {
+     width: 100%;
+ }
+
+ .input:valid {
+     border-left: 10px solid green;
+ }
+
+ .input:invalid {
+     border-left: 10px solid red;
+ }
+
+ .textarea {
+     resize: none;
+     height: 4rem;
+     border-radius: 40px;
+     padding: 2rem;
+ }
+
+ .form-group label {
+     position: absolute;
+     top: 46px;
+     left: 61px;
+     font-size: 1.4rem;
+     background-color: white;
+     visibility: hidden;
+     transition: top .4s ease, left .4s ease;
+ }
+
+ .input:focus~label {
+     top: 0.6875rem;
+     left: 3.8125rem;
+     padding: 0 1rem;
+     box-shadow: 0 0 1rem rgba(0, 0, 0, .4);
+     visibility: visible;
+     border-radius: 10px;
+ }
+
+ .input:focus::placeholder {
+     color: transparent;
+ }
+
+ .left {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-evenly;
+ }
+
+ .maps-title {
+     font-size: 3rem;
+     color: white;
+     text-align: center;
+ }
+</style>
+<body>
+  <header>
+    <div class="menu-toggle" id = "hamburger">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="overlay"></div>
+    <div class="container">
+        <nav>
+          <h1 class="brand"><a href="index.html"> <img src="../imgs/home-pg/logo whitepn.png" alt="" width="60%"> </a></h1>
+             
+              
+              <ul>
+                <li><a href="drivewithAvick.html">Driver</a></li>
+                <li><a href="riders.html">Rider</a></li>
+                <li><a href="business.html">Business</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="get-help.html">FAQS</a></li>
+                <li><a href="get-help.html">Talk to Us</a></li>
+            </ul>
+            <div class="proudly-9ja">
+              <img src="../imgs/home-pg/proudly nigeria.svg" alt="">
+            </div>
+        </nav>
+    </div>
+</header>
+<section class="contact">
+  <div class="contact-content">
+      <div class="left">
+          <div class="contact-info">
+              <h1 class="maps-title">Find Us on Google Maps</h1>
+          </div>
+          <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31671.16947704812!2d3.3702266!3d7.1380026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1643322607225!5m2!1sen!2sng"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="right">
+          
+          <div class="contact-form">
+              <form class="form">
+                  <div class="contact-heading">Login Here as a Driver</div>
+                  <div class="form-group">
+                      <input type="email" class="input" id="lusername" placeholder="abc@gmail.com" required>
+                      <label for="name">Email</label>
+                  </div>
+                  <div class="form-group">
+                      <input type="password" class="input" id="lpassword" placeholder="Password" required>
+                      <label for="email">Password</label>
+                  </div>
+                  <a href="#" class="contact-btn" id="login">Login</a>
+              </form>
+          </div>
+      </div>
+  </div>
+
+</section>
+
+  <div class="form-section">
+    <div class="talk-to-sales">
+      <h2>Driver Registration</h2>
+        <form action="w-50" class="form">
+          <div class="">
+            <input type="first Name" placeholder="first Name*" id="fname" required>
+            <input type="last Name" placeholder="last Name*" id="lname" required>
+          </div>
+          <div>
+            <input type="Phone Number" name="phone" id="username" placeholder="User Name*" required>
+            <input type="Email Address" placeholder="Email Address*" id="email">
+          </div>
+          <div>
+            <input type="password" name="" id="password" placeholder="password*" required>
+            <input type="Job Title" name="" id="job" placeholder="Job Title*" required>
+          </div>
+          <div>
+
+        </div>
+        <button class="btn-secondary g-i-t" id="btn">Register</button>
+      </form>
+    </div>
+  </div>
+  <script src="../js/nav.js">
+   
+  </script> 
+  <script src="../js/validateReg.js" type="module"></script>
+</body>
+</html>
